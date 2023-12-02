@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8.12% 20%;
+}
+
+.login{
+    background-color:rgba(245, 245, 245, 1);
+    max-width: 690px;
+    border-radius: 16px;
+    padding: 27px 70px 47px 70px;
+}
+
+#reg{
+    margin-left: 78%;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#loginPng{
+    position: absolute;
+    z-index: -1;
+    margin-right: 840px;
+}
+
+#regPng{
+    position: absolute;
+    z-index: -1;
+    margin-left: 800px;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    margin-bottom: 27px;
+    margin-top: 22px;
+    font-size: 36px;
+}
+
+header p{
+    font-size: 14px;
+    color: rgba(113, 113, 113, 1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main input:not([name="checked"]){
+    background-color: transparent;
+    border: rgba(183, 183, 183, 1) 1px solid;
+    width: 100%;
+    padding: 28px 17px 21px 17px;
+    border-radius: 4px;
+}
+
+main #pass{
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+main #repass{
+    margin-bottom: 20px;
+}
+
+.optional{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.optional #checked, p{
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    background-color: rgba(25, 121, 187, 1);
+    padding: 14px 0 14px 0;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.google, .facebook{
+    display: flex;
+    align-items: center;
+    max-height: 44px;
+    cursor: pointer;
+}
+
+.google{
+    background-color: rgba(66, 133, 244, 1);
+}
+
+.facebook{
+    background-color: rgba(60, 90, 154, 1);
+}
+
+.google img, .facebook img{
+    background-color: white;
+    margin: 2px 25px 3px 3px;
+    padding: 5px 14px 4px 14px;
+}
+
+.google p, .facebook p{
+    padding-right: 28px;
+}
+
+label[for="username"],label[for="repass"]{
+    position: absolute;
+    z-index: 2;
+    margin-left: 45px;
+    margin-top: -8px;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 0 20px 0 20px;
+}
+
+label[for="pass"]{
+    position: absolute;
+    margin-left: 45px;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 0 20px 0 20px;
+    margin-top: 28px;
+}
+
+.unshow{
+    display: none;
+}

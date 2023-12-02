@@ -5,9 +5,59 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+    <div class="wrapper">
+        <img class="show" src="./assets/img/login.png" alt="loginPng" id="loginPng">
+        <img class="unshow" src="./assets/img/register.png" alt="loginPng" id="regPng">
+        <div class="login">
+            <p id="reg" class="show">Register &nbsp;&nbsp; →</p>
+            <p id="log" class="unshow">←&nbsp;&nbsp;Login</p>
+            <div class="all">
+                <header>
+                    <img src="./assets/img/logo.png">
+                    <h1 class="show">LoginPage</h1>
+                    <h1 class="unshow">RegisterPage</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur ex nisi nobis possimus rem reprehenderit rerum ut? Aperiam commodi dolore excepturi iure reiciendis voluptatum!</p>
+                </header>
+                <main>
+                    <form id="loginPage">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username or Email..." required>
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" placeholder="******************" required>
+                        <label for="repass" class="unshow">Re-Password</label>
+                        <input type="password" class="unshow" name="pass" id="repass" placeholder="******************" required>
+                        <div class="optional">
+                            <div class="remember show">
+                                <input type="checkbox" id="checked" name="checked">
+                                <label for="checked" class="show">Remember me</label>
+                            </div>
+                            <div class="register remember unshow">
+                                <input type="checkbox" id="checkedreg" name="checked" required>
+                                <label for="checked" class="unshow">Terms of Use</label>
+                            </div>
+                            <p class="show">Forgot Password?</p>
+                        </div>
+                        <button type="submit" class="show">Login</button>
+                        <button type="submit" class="unshow">Register</button>
+                    </form>
+                </main>
+                <footer>
+                    <div class="google">
+                        <img src="./assets/img/google.png" alt="google">
+                        <p>Sign in with Google</p>
+                    </div>
+                    <div class="facebook">
+                        <img src="./assets/img/face.png" alt="facebook">
+                        <p>Sign in with Facebook</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+<script src="./js/main.js"></script>
 </body>
 </html>
